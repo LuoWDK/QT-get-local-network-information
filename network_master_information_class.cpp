@@ -6,6 +6,7 @@ InformationClass::InformationClass(QWidget *parent) :
     ui(new Ui::InformationClass)
 {
     ui->setupUi(this);
+    this->setWindowTitle(tr("Network Information"));
     GetHostInfomation();
 }
 
