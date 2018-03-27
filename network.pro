@@ -26,16 +26,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        network_master_information_class.cpp \
-    network_master_udpserver_class.cpp \
-    network_client_udpclient_class.cpp
+    network_client_udpclient_class.cpp \
+    network_master_test_network_class.cpp \
+    network_server_udpserver_class.cpp \
+    network_dr_information_class.cpp
 
 HEADERS += \
-        network_master_information_class.h \
-    network_master_udpserver_class.h \
-    network_client_udpclient_class.h
+    network_client_udpclient_class.h \
+    network_master_test_network_class.h \
+    network_server_udpserver_class.h \
+    network_dr_information_class.h
 
 FORMS += \
-        network_master_information_class.ui \
-    network_master_udpserver_class.ui \
-    network_client_udpclient_class.ui
+    network_client_udpclient_class.ui \
+    network_master_test_network_class.ui \
+    network_server_udpserver_class.ui \
+    network_dr_information_class.ui
