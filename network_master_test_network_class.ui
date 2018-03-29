@@ -63,12 +63,12 @@
    </item>
    <item>
     <property name="text">
-     <string>UDP Translation</string>
+     <string>UDP Server</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>TCP Translation</string>
+     <string>UDP Client</string>
     </property>
    </item>
   </widget>

@@ -19,17 +19,17 @@ void TestNetworkClass::on_submit_pushButton__clicked()
     QString item = ui->item_comboBox_->currentText();
     if (item.startsWith("IP", Qt::CaseSensitive))
     {
-        ip_window_ = new InformationClass();
-        ip_window_->show();
+        InformationClass *ip_window = new InformationClass();
+        ip_window->show();
     }
-    else if (item.startsWith("UDP", Qt::CaseSensitive))
+    else if (item.startsWith("UDP S", Qt::CaseSensitive))
     {
-        udpclient_window_ = new UdpClientClass();
-        udpclient_window_->show();
-        udpserver_window_ = new UdpServerClass();
-        udpserver_window_->show();
+        UdpServerClass *udpserver_window = new UdpServerClass();
+        udpserver_window->show();
     }
-    else if (item.startsWith("TCP", Qt::CaseSensitive))
+    else if (item.startsWith("UDP C", Qt::CaseSensitive))
     {
+        UdpClientClass *udpclient_window = new UdpClientClass();
+        udpclient_window->show();
     }
 }
